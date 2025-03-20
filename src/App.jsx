@@ -1,15 +1,18 @@
+import { Suspense, lazy } from "react";
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { About, Contact, Experience, Hero, Navbar, StarsCanvas, Tech, Works } from './components';
 
 const App = () => {
   return (
+    
     <BrowserRouter
       future={{
         v7_startTransition: true,
         v7_relativeSplatPath: true,
       }}
     >
+      <Suspense fallback={<div>Loading...</div>}>
       <div className="relative z-0 bg-primary">
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar />
@@ -23,8 +26,10 @@ const App = () => {
           <Contact />
           <StarsCanvas />
         </div>
-      </div>
+      </div>  
+      </Suspense>
     </BrowserRouter>
+    
   );
 };
 
