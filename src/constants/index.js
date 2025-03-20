@@ -64,7 +64,7 @@ export const experiences = [
     iconBg: "#161329",
     date: "Nov 2024 - Present",
     points: [
-      "Contributing in scaling Rabble telegram bot to simplify crypto transactions.",
+      "Contributing in scaling Rabble telegram bot to simplify crypto transactions",
       "Participated in Rabble MiniHack and won 100$",
       "Currently working in RabbleGuilds",
     ],
